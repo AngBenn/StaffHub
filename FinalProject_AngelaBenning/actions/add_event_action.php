@@ -19,9 +19,11 @@ if (isset($_POST["addEvent"])) {
   
     if ($result) {
         // Return success response
-        echo json_encode(array('success' => true));
+        header("Location: ../admin/events.php?msg=success");
+                exit;
     } else {
         // Return error response
-        echo json_encode(array('success' => false));
+        header("Location: ../admin/events.php?msg=failed");
+        exit;
     }
 }

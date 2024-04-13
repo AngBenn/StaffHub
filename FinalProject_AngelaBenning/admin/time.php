@@ -327,8 +327,8 @@ $roleId = check_login();
                 <?php if ($roleId == 2) : ?>
                     <li><a href="../admin/time.php"><i class="fas fa-clock"></i> Record Time</a></li>
                 <?php endif; ?>
-                <?php if ($roleId == 2|| $roleId==3) : ?>
-                <li><a href="../admin/dashboard.php"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                <?php if ($roleId == 2 || $roleId == 3) : ?>
+                    <li><a href="../admin/dashboard.php"><i class="fas fa-chart-line"></i> Dashboard</a></li>
                 <?php endif; ?>
                 <?php if ($roleId == 3) : ?>
                     <li><a href="../admin/courses.php"><i class="fas fa-book"></i> Manage Courses</a></li>
@@ -422,7 +422,14 @@ $roleId = check_login();
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Include SweetAlert library -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script src="../js/time.js"></script>
+
 
 </body>
 
